@@ -13,6 +13,8 @@ dependencies:
   flutter_facebook_auth: ^6.0.0
   get: 4.6.6
   google_sign_in: ^5.4.2
+  firebase_database: ^10.3.4
+  shared_preferences: ^2.2.2
   firebase_auth: ^4.2.0
   firebase_core: ^2.4.0
   social_login_buttons: ^1.0.7
