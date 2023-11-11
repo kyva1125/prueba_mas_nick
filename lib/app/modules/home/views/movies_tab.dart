@@ -28,7 +28,7 @@ class MoviesTab extends StatelessWidget {
               direction: Axis.horizontal,
               allowHalfRating: true,
               itemCount: 5,
-              itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
+              itemPadding:  const EdgeInsets.symmetric(horizontal: 4.0),
               itemBuilder: (context, _) => Icon(
                 Icons.star,
                 color: Colors.amber,
@@ -82,7 +82,7 @@ class MoviesTab extends StatelessWidget {
                         Get.toNamed(Routes.CONTENT_DETAIL, arguments: i);
                       },
                       child: Container(
-                          margin: EdgeInsets.symmetric(horizontal: 5.0),
+                          margin: const EdgeInsets.symmetric(horizontal: 5.0),
                           decoration: BoxDecoration(
                               color: Color((math.Random().nextDouble() * 0xFFFFFF)
                                       .toInt())

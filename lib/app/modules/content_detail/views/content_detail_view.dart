@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:prueba_mas_nick/app/data/models/movies_popular_model.dart';
 
 import '../controllers/content_detail_controller.dart';
 

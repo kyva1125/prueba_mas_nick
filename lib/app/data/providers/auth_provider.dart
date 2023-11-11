@@ -10,6 +10,7 @@ import 'package:prueba_mas_nick/app/data/helpers/preferences.dart';
 class AuthProvider {
   final dabatase = FirebaseDatabase.instance;
 
+  // Inicar sesion google
   Future<UserCredential?> signInWithGoogle() async {
     try {
       final GoogleSignInAccount? gUser = await GoogleSignIn().signIn();
@@ -56,7 +57,7 @@ class AuthProvider {
       return null;
     }
   }
-
+  // Cerrar sesion google
   Future<bool?> signOutWithGoogle() async {
     try {
       await GoogleSignIn().signOut();

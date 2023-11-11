@@ -6,6 +6,7 @@ import 'package:prueba_mas_nick/app/data/models/movies_trending_model.dart';
 
 class MoviesProvider extends GetConnect {
   final url = "https://api.trakt.tv/movies";
+  // Key que se puede guardar en las variables globales .env por ser dato sensible
   final key =
       "9074b148ecb487668109a0483fbb14d26f3a4b1e32a8b143b73af19147f8d51f";
 

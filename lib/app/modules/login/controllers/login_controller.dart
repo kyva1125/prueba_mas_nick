@@ -3,6 +3,7 @@ import 'package:prueba_mas_nick/app/data/helpers/preferences.dart';
 import 'package:prueba_mas_nick/app/data/providers/auth_provider.dart';
 import 'package:prueba_mas_nick/app/routes/app_pages.dart';
 
+// Enum para diferenciar entre los login
 enum LoginType { Google, Facebook }
 
 class LoginController extends GetxController {
@@ -16,7 +17,9 @@ class LoginController extends GetxController {
     super.onReady();
   }
 
+// Logearse e ir a la pagina principal
   goToHomePage(LoginType loginType) async {
+    // Switch para ver si es google o facebook
     switch (loginType) {
       case LoginType.Google:
         {

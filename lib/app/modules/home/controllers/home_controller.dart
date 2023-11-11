@@ -6,30 +6,30 @@ import 'package:prueba_mas_nick/app/data/providers/movies_provider.dart';
 import 'package:prueba_mas_nick/app/routes/app_pages.dart';
 
 class HomeController extends GetxController {
+  // Llamada a los providers
   final authProvider = AuthProvider();
   final moviesProvier = MoviesProvider();
 
-  bool cargando = true;
-
   List<MoviesTrendingModel>? moviesTrending;
   List<MoviesPopularModel>? moviesPopulars;
+
   @override
   void onInit() {
     getAllTrending();
     getAllPopulars();
     super.onInit();
   }
-
+  // Implementacion para cerrar sesion
   cerrarSesion() async {
     final salir = await authProvider.signOutWithGoogle();
     if (salir == true) Get.offNamed(Routes.LOGIN);
   }
-
+  // Obtener trending
   getAllTrending() async {
     moviesTrending = await moviesProvier.getAllTrending();
     update();
   }
-
+  // Obtener populares
   getAllPopulars() async {
     moviesPopulars = await moviesProvier.getAllPopulars();
     update();

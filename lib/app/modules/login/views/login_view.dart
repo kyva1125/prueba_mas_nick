@@ -16,29 +16,33 @@ class LoginView extends GetView<LoginController> {
       builder: (controller) {
         return Scaffold(
           body: Center(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text("MY MOVIES - NICK LEDESMA"),
-                SocialLoginButton(
-                  buttonType: SocialLoginButtonType.google,
-                  onPressed: () {
-                    controller.goToHomePage(LoginType.Google);
-                  },
-                ),
-                SocialLoginButton(
-                  buttonType: SocialLoginButtonType.facebook,
-                  onPressed: () {
-                    controller.goToHomePage(LoginType.Facebook);
-                  },
-                ),
-                // Verifica si se esta corriendo en un IOS
-                if (Platform.isIOS)
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Text("MY MOVIES - NICK LEDESMA"),
+                  const SizedBox(height: 200,),
                   SocialLoginButton(
-                    buttonType: SocialLoginButtonType.apple,
-                    onPressed: () {},
+                    buttonType: SocialLoginButtonType.google,
+                    onPressed: () {
+                      controller.goToHomePage(LoginType.Google);
+                    },
                   ),
-              ],
+                  SocialLoginButton(
+                    buttonType: SocialLoginButtonType.facebook,
+                    onPressed: () {
+                      controller.goToHomePage(LoginType.Facebook);
+                    },
+                  ),
+                  // Verifica si se esta corriendo en un IOS
+                  if (Platform.isIOS)
+                    SocialLoginButton(
+                      buttonType: SocialLoginButtonType.apple,
+                      onPressed: () {},
+                    ),
+                ],
+              ),
             ),
           ),
         );

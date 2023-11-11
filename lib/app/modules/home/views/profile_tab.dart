@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:prueba_mas_nick/app/data/helpers/preferences.dart';
-import 'package:prueba_mas_nick/app/modules/home/controllers/home_controller.dart';
 
 class ProfileTab extends StatelessWidget {
   const ProfileTab({Key? key}) : super(key: key);

@@ -20,7 +20,7 @@ class HomeView extends GetView<HomeController> {
             appBar: AppBar(
               title: const Text('Pagina inicial'),
              
-              bottom: TabBar(
+              bottom: const TabBar(
                 tabs: [
                   Tab(text: 'Movies'),
                   Tab(text: 'Profile'),
@@ -28,9 +28,9 @@ class HomeView extends GetView<HomeController> {
               ),
               actions: [
                 LikeButton(
-                  circleColor: CircleColor(
+                  circleColor: const CircleColor(
                       start: Colors.black, end: Colors.white),
-                  bubblesColor: BubblesColor(
+                  bubblesColor: const BubblesColor(
                     dotPrimaryColor: Color(0xff33b5e5),
                     dotSecondaryColor: Color(0xff0099cc),
                   ),
