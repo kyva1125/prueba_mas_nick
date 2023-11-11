@@ -29,6 +29,8 @@ class AuthProvider {
 
 // Guardamos las preferencias para ingresar directo
       Preferences.usuario = user.user!.displayName.toString();
+      Preferences.email = user.user!.email.toString();
+      Preferences.urlImagen = user.user!.photoURL.toString();
 
       return user;
     } on PlatformException catch (err) {

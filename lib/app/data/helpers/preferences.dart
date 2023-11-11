@@ -26,4 +26,20 @@ class Preferences {
   static set usuario(String? value) {
     _prefs!.setString('usuario', value!);
   }
+
+  static String? get email {
+    return _prefs!.getString('email');
+  }
+
+  static set email(String? value) {
+    _prefs!.setString('email', value!);
+  }
+
+  static String? get urlImagen {
+    return _prefs!.getString('urlImagen');
+  }
+
+  static set urlImagen(String? value) {
+    _prefs!.setString('urlImagen', value!);
+  }
 }
