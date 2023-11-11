@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "213802883563",
+    "project_id": "prueba-mas-nick",
+    "storage_bucket": "prueba-mas-nick.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213802883563:android:d69a4c8cc4e1ea77e961ae",
+        "android_client_info": {
+          "package_name": "com.nickledesma.prueba_mas_nick"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9jDgH-hLkB9YQpgGkGWHQ8pAqSRRsBMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
